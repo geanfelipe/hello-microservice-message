@@ -1,6 +1,6 @@
 # hello-consumer-microservice-message
 That is an java async **message-based** (microservice).  
-This is a server application that sends messages when the event bus channel receives an event from [consumer app])https://github.com/geanfelipe/hello-consumer-microservice-message)
+This is a server application that sends messages when the event bus channel receives an event from [consumer app](https://github.com/geanfelipe/hello-consumer-microservice-message)
 
 like this:  
 ![image](src/main/resources/img/image.png)
