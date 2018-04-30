@@ -6,7 +6,7 @@
   <artifactId>hello-microservice-message</artifactId>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <vertx.version>3.4.0</vertx.version>
+    <vertx.version>3.5.1</vertx.version>
     <vertx.verticle>io.vertx.book.message.HelloMicroservice</vertx.verticle>
     <fabric8-vertx-maven-plugin.version>1.0.5</fabric8-vertx-maven-plugin.version>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -29,6 +29,10 @@
       <groupId>io.vertx</groupId>
       <artifactId>vertx-core</artifactId>
     </dependency>
+    <dependency>
+	  <groupId>io.vertx</groupId>
+	  <artifactId>vertx-service-proxy</artifactId>
+	</dependency>
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-infinispan</artifactId>

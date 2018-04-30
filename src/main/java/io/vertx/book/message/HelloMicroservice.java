@@ -13,7 +13,7 @@ public class HelloMicroservice extends AbstractVerticle {
     		
     		JsonObject json = new JsonObject()
     				.put("served-by",this.toString());
-    		System.out.println("novo request chegando de "+message.address()+ " : "+message.replyAddress());
+    		System.out.println("new request coming from "+message.address()+ " : "+message.replyAddress());
     		
     		System.out.println("time: "+chaos);
     		if(chaos < 0.6) {
@@ -24,6 +24,7 @@ public class HelloMicroservice extends AbstractVerticle {
         		}else {
         			message.reply(json.put("message","hello "+message.body()));
         		}
+        		message.reply("\n#thank you my boy\n");
     		}else if(chaos < 0.9) {
     			System.out.println("returning a feilure");
     			message.fail(500, "message processing a failure");
@@ -31,7 +32,7 @@ public class HelloMicroservice extends AbstractVerticle {
     			System.out.println("not reply");
     			//not reply, leading to a timeout on the consumer side
     		}
-    		
     	});
+    	
     }
 }
