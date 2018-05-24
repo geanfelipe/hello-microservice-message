@@ -13,10 +13,6 @@ like this:
 ## Install dependencies and run
 ```
 $ mvn clean install  
-$ compile vertx:run -Dvertx.runArgs="-cluster -Djava.net.preferIPv4Stack=true" #in cluster mode
-```
-Or merely
-```
-$ compile vertx:run
+$ mvn compile vertx:run -Dvertx.runArgs="-cluster -Djava.net.preferIPv4Stack=true" #in cluster mode
 ```
 
